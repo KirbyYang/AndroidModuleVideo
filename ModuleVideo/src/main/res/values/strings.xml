@@ -1,0 +1,13 @@
+<resources>
+    <string name="modulevideo_string_network_disconnected">网络未连接，请检查网络设置</string>
+    <string name="modulevideo_string_play_error">播放出错了，错误代码：</string>
+
+    <string-array name="modulevideo_play_speed">
+        <item>0.75</item>
+        <item>1</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

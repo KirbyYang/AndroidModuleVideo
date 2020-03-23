@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 遮幕效果 -->
+    <View
+        android:id="@+id/modulevideo_video_controller_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" />
+
+    <!-- back -->
+    <ImageView
+        android:id="@+id/modulevideo_shadow_iv_back"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:src="@drawable/modulevideo_selector_iv_back"
+        android:tint="@color/modulevideo_tint_iv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 正在加载... -->
+    <LinearLayout
+        android:id="@+id/modulevideo_shadow_ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/modulevideo_shape_video_loading"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="正在加载..."
+            android:textColor="@color/modulevideo_color_ff9600"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/modulevideo_shadow_iv_orientation"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/modulevideo_selector_iv_full_to_screen"
+        android:tint="@color/modulevideo_tint_iv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/modulevideo_shadow_iv_more"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:src="@drawable/modulevideo_selctor_iv_more"
+        android:tint="@color/modulevideo_tint_iv"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</merge>

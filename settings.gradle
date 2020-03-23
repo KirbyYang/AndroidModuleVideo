@@ -1,0 +1,3 @@
+include ':app',
+        'ModuleVideo',
+        'lib-mvp-base'
